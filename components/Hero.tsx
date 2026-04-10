@@ -14,7 +14,7 @@ const Hero = () => {
           className="object-cover opacity-60"
           priority
         />
-        
+
         {/* Animated Logistics Visual */}
         <div className="absolute inset-0 flex items-center justify-center opacity-40">
           <svg width="800" height="500" viewBox="0 0 800 500" className="w-full max-w-4xl h-auto">
@@ -28,7 +28,7 @@ const Hero = () => {
               strokeDasharray="8 8"
               className="opacity-20"
             />
-            
+
             {/* Point A (Australia) */}
             <g transform="translate(100, 400)">
               <circle r="6" fill="#7598f8" className="animate-pulse-glow" />
@@ -43,9 +43,9 @@ const Hero = () => {
           </svg>
 
           {/* Abstract Glowing Pulse (The Package) */}
-          <div 
+          <div
             className="absolute w-6 h-6 bg-blue-400 rounded-full blur-md animate-package"
-            style={{ 
+            style={{
               offsetPath: `path("${pathData}")`,
               boxShadow: '0 0 20px #60a5fa, 0 0 40px #60a5fa'
             }}
@@ -63,9 +63,9 @@ const Hero = () => {
             Shop any Australian online store. Send to our warehouse. Consolidate and track delivery to Honiara – all in one simple mobile app.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-[#003087] text-white px-10 py-4 rounded-xl font-bold text-lg hover:brightness-110 transition-all oceanic-gradient">
+            <a href="#join" className="bg-[#003087] text-white px-10 py-4 rounded-xl font-bold text-lg hover:brightness-110 transition-all oceanic-gradient">
               Join the Waitlist
-            </button>
+            </a>
           </div>
           <div className="flex items-center space-x-4 pt-4 border-t border-white/10">
             <span className="text-xs uppercase tracking-[0.2em] font-bold text-white/60">Powered by Zonos</span>
