@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhyChooseOVO = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white" id="fees">
       <div className="container mx-auto px-6">
         <div className="bento-grid">
           <div className="col-span-12 lg:col-span-4 bg-[#001d59] p-10 rounded-3xl text-white space-y-6 relative overflow-hidden">

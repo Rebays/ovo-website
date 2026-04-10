@@ -8,7 +8,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white" id="faq">
       <div className="container mx-auto px-6 max-w-4xl">
         <h2 className="text-3xl font-extrabold font-headline text-center mb-16 text-primary uppercase tracking-widest">Common Questions</h2>
         <div className="space-y-6">
@@ -21,9 +21,9 @@ const FAQ = () => {
         </div>
         <div className="text-center mt-20 p-12 border-2 border-dashed border-outline-variant rounded-3xl">
           <h3 className="text-2xl font-bold text-primary mb-4">Ready to start shopping?</h3>
-          <button className="bg-primary text-white px-10 py-4 rounded-xl font-bold uppercase tracking-widest hover:scale-105 transition-transform">
+          <a href="#join" className="bg-primary text-white px-10 py-4 mt-4 rounded-xl font-bold uppercase tracking-widest hover:scale-105 transition-transform">
             Join Waitlist
-          </button>
+          </a>
         </div>
       </div>
     </section>

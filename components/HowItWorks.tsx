@@ -13,7 +13,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-24 bg-surface-container-low relative overflow-hidden">
+    <section className="py-24 bg-surface-container-low relative overflow-hidden" id="how-it-works">
       <div className="absolute top-0 right-0 w-1/3 h-full opacity-5 pointer-events-none">
         <div className="h-full w-full" style={{ backgroundImage: 'repeating-linear-gradient(30deg, #001d59, #001d59 1px, transparent 1px, transparent 20px)' }}></div>
       </div>

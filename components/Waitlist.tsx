@@ -21,7 +21,7 @@ const Waitlist = () => {
   }
 
   return (
-    <section className="py-24 relative">
+    <section className="py-24 relative" id="join">
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="bg-[#003087] rounded-[3rem] p-12 md:p-20 text-white text-center relative overflow-hidden shadow-2xl">
           <div className="absolute -bottom-10 -right-10 opacity-10">

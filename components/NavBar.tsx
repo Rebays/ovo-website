@@ -6,13 +6,13 @@ const NavBar = () => {
       <div className="text-2xl font-extrabold tracking-tighter text-[#003087] dark:text-white">OVO</div>
       <div className="hidden md:flex items-center space-x-8">
         <a className="font-semibold tracking-tight text-sm uppercase text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors duration-300" href="#preview">App Preview</a>
-        <a className="font-semibold tracking-tight text-sm uppercase text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors duration-300" href="#">How It Works</a>
-        <a className="font-semibold tracking-tight text-sm uppercase text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors duration-300" href="#">Fees</a>
-        <a className="font-semibold tracking-tight text-sm uppercase text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors duration-300" href="#">FAQ</a>
+        <a className="font-semibold tracking-tight text-sm uppercase text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors duration-300" href="#how-it-works">How It Works</a>
+        <a className="font-semibold tracking-tight text-sm uppercase text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors duration-300" href="#fees">Fees</a>
+        <a className="font-semibold tracking-tight text-sm uppercase text-slate-600 dark:text-slate-300 hover:text-blue-600 transition-colors duration-300" href="#faq">FAQ</a>
       </div>
       <div className="flex items-center space-x-4">
         {/* <button className="font-semibold tracking-tight text-sm uppercase text-slate-600 dark:text-slate-300 hover:text-[#00A86B] transition-colors duration-300 scale-95 active:scale-90 transform">Login</button> */}
-        <button className="bg-[#003087] text-white px-6 py-2 rounded-2xl font-semibold tracking-tight text-sm uppercase scale-95 active:scale-90 transform hover:bg-primary-container">Join Waitlist</button>
+        <a href="#join" className="bg-[#003087] text-white px-6 py-2 rounded-2xl font-semibold tracking-tight text-sm uppercase scale-95 active:scale-90 transform hover:bg-primary-container inline-block">Join Waitlist</a>
       </div>
     </nav>
   );
