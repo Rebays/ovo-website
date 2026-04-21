@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# firebase
+# Add this to the BOTTOM of your .gitignore
+**/.firebase/
+**/.firebase/**
+vsce-debug.log
