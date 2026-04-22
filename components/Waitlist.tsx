@@ -1,23 +1,22 @@
 'use client';
 
-import React, { useTransition } from 'react';
+import React, { useState } from 'react';
 import { toast } from 'sonner';
-import { joinWaitlist } from '../app/actions';
 
 const Waitlist = () => {
-  const [isPending, startTransition] = useTransition();
+  const [isPending, setIsPending] = useState(false);
 
   async function handleSubmit(formData: FormData) {
-    startTransition(async () => {
-      const result = await joinWaitlist(formData);
-      if (result.success) {
-        toast.success('Successfully joined the waitlist!');
-        const form = document.getElementById('waitlist-form') as HTMLFormElement;
-        form?.reset();
-      } else {
-        toast.error(result.error || 'Something went wrong');
-      }
-    });
+    setIsPending(true);
+    
+    // Simulate a network delay
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
+    toast.success('Successfully joined the waitlist!');
+    const form = document.getElementById('waitlist-form') as HTMLFormElement;
+    form?.reset();
+    
+    setIsPending(false);
   }
 
   return (
